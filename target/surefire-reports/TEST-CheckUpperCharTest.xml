@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CheckSpecialCharTest" time="0.017" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CheckUpperCharTest" time="0.074" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -51,20 +51,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testPasswordWithoutSpecialChar" classname="CheckSpecialCharTest" time="0.001"/>
-  <testcase name="testPasswordWithouttSpecialChar" classname="CheckSpecialCharTest" time="0.006">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:179)
-	at CheckSpecialCharTest.testPasswordWithouttSpecialChar(CheckSpecialCharTest.java:18)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="testPasswordContainsSpecialChar" classname="CheckSpecialCharTest" time="0.004"/>
+  <testcase name="testAllUpperCase" classname="CheckUpperCharTest" time="0.025"/>
+  <testcase name="testPasswordWithoutUpperCase" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testUpperCaseAtEnd" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testPasswordContainUpperChar" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testEmptyString" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testNullString" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testUpperCaseWithNumbersAndSpecialChars" classname="CheckUpperCharTest" time="0.001"/>
+  <testcase name="testNumbersAndSpecialChars" classname="CheckUpperCharTest" time="0.002"/>
 </testsuite>
